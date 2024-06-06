@@ -30,12 +30,6 @@
             div {
                 transition: 1s;
             }
-            .planboxR:hover {
-                transform: translateX(30px);
-            }
-            .planboxL:hover {
-                transform: translateX(-30px);
-            }
             img {
                 transition: 1s;
             }
@@ -118,6 +112,21 @@
                 padding: 20px;
                 border-radius: 20px;
                 background-color: gainsboro;
+            }
+            .planboxL {
+                text-align: right; 
+                position: relative; 
+                right: 53%;
+            }
+            .planboxR {
+                position: relative; 
+                left: 49%;
+            }
+            .planboxL:hover {
+                transform: translateX(-30px);
+            }
+            .planboxR:hover {
+                transform: translateX(30px);
             }
             .contact {
                 height: 900px;
@@ -385,52 +394,40 @@
                 <hr>
                 <h2 style="text-align: center;">계획</h2>
                 <canvas id="mycanvas" width="50px" height="1500px" style="float: left; position: relative; left: 48%;"></canvas>
-                <div style="position: relative; left: 49%;">    
-                    <div class="planboxR">
-                        <h3>2024년 6월</h3>
-                        <p>K-디지털 챌린지 메타버스 개발자 경진대회 준비<br>
-                        unity 공부 및 'ProjectTT' 제작<br>
-                        창업동아리 '용기 낼 용기' 제작</p>
-                    </div>
+                <div class="planboxR">
+                    <h3>2024년 6월</h3>
+                    <p>K-디지털 챌린지 메타버스 개발자 경진대회 준비<br>
+                    unity 공부 및 'ProjectTT' 제작<br>
+                    창업동아리 '용기 낼 용기' 제작</p>
                 </div>
-                <div style="text-align: right; position: relative; right: 53%;">
-                    <div class="planboxL">
-                        <h3>2024년 9월</h3>
-                        <p>'ProjectTT'데모버전 완성 후 공모전 및 행사 준비<br>
-                            (버닝비버, 게임 레벨업 쇼케이스, GEEKS 등)<br>
-                            창업동아리 '용기 낼 용기' 완성</p>
-                    </div>
+                <div class="planboxL">
+                    <h3>2024년 9월</h3>
+                    <p>'ProjectTT'데모버전 완성 후 공모전 및 행사 준비<br>
+                        (버닝비버, 게임 레벨업 쇼케이스, GEEKS 등)<br>
+                        창업동아리 '용기 낼 용기' 완성</p>
                 </div>
-                <div style="position: relative; left: 49%;">
-                    <div class="planboxR">
-                        <h3>2024년 12월</h3>
-                        <p>'ProjectTT'완성 및 출시 후 새로운 프로젝트 제작<br>
-                            정보처리기사 취득 준비<br>
-                            (1월, 4월, 6월 접수)</p>
-                    </div>
+                <div class="planboxR">
+                    <h3>2024년 12월</h3>
+                    <p>'ProjectTT'완성 및 출시 후 새로운 프로젝트 제작<br>
+                        정보처리기사 취득 준비<br>
+                        (1월, 4월, 6월 접수)</p>
                 </div>
-                <div style="text-align: right; position: relative; right: 53%;">
-                    <div class="planboxL">
-                        <h3>2025년 3월</h3>
-                        <p>정보처리기사 시험 응시<br>
-                            인턴십 지원 및 취업 준비<br>
-                            (스마일게이트, 펄어비스, 넥슨, 에픽게임즈, EA, NC, 컴투스, KOG, 네오위즈 등)</p>
-                    </div>
+                <div class="planboxL">
+                    <h3>2025년 3월</h3>
+                    <p>정보처리기사 시험 응시<br>
+                        인턴십 지원 및 취업 준비<br>
+                        (스마일게이트, 펄어비스, 넥슨, 에픽게임즈, EA, NC, 컴투스, KOG, 네오위즈 등)</p>
                 </div>
-                <div style="position: relative; left: 49%;">
-                    <div class="planboxR">
-                        <h3>2025년 6월</h3>
-                        <p>K-디지털 챌린지 메타버스 개발자 경진대회 준비<br>
-                            새로운 프로젝트 제작<br>
-                            인턴십 지원 및 취업 준비</p>
-                    </div>
+                <div class="planboxR">
+                    <h3>2025년 6월</h3>
+                    <p>K-디지털 챌린지 메타버스 개발자 경진대회 준비<br>
+                        새로운 프로젝트 제작<br>
+                        인턴십 지원 및 취업 준비</p>
                 </div>
-                <div style="text-align: right; position: relative; right: 53%;">
-                    <div class="planboxL">
-                        <h3>2025년 9월</h3>
-                        <p>새로운 프로젝트 완성 및 출시<br>
-                            인턴십 지원 및 취업 준비</p>
-                    </div>
+                <div class="planboxL">
+                    <h3>2025년 9월</h3>
+                    <p>새로운 프로젝트 완성 및 출시<br>
+                        인턴십 지원 및 취업 준비</p>
                 </div>
             </div>
         </section>
@@ -453,7 +450,7 @@
             <div class="footer">
                 <span style="color: white;">Tel. - 010.2720.7595 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp E-mail - nbowl@naver.com</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <div id="clock" style="color: white; display: inline;">clock</div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <a href="javascript:loadPage('https://github.com/wesley0814')" style="color: white; text-decoration: underline;">Github Page</a>
+                <a href="javascript:loadPage('https://github.com/wesley0814/WebProgramming')" style="color: white; text-decoration: underline;">Github Page</a>
             </div>
         </footer>
         <script>
